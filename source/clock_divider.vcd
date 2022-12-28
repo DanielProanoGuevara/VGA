@@ -1,0 +1,53 @@
+$date
+	Wed Dec 28 18:44:50 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module clock_divider_tb $end
+$var wire 1 ! clk_div $end
+$var reg 1 " clk $end
+$scope module UUT $end
+$var wire 1 " clk $end
+$var reg 1 ! clk_div $end
+$var integer 32 # counter_value [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1 #
+1"
+0!
+$end
+#5000
+0"
+#10000
+1!
+b0 #
+1"
+#15000
+0"
+#20000
+b1 #
+1"
+#25000
+0"
+#30000
+0!
+b0 #
+1"
+#35000
+0"
+#40000
+b1 #
+1"
+#45000
+0"
+#50000
+1!
+b0 #
+1"
