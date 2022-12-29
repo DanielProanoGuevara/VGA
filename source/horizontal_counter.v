@@ -10,7 +10,7 @@ module horizontal_counter(
 			  );
 
    always@(posedge clk_25MHz) begin
-      if (H_Count_Value < 800) //VGA standard
+      if (H_Count_Value < 799) //VGA standard
 	H_Count_Value <= H_Count_Value + 1;
         enable_V_counter <= 0;
       end

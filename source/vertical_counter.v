@@ -10,9 +10,13 @@ module vertical_counter(
 			  );
 
    always@(posedge clk_25MHz) begin
-      if (V_Count_Value < 525 && enable_V_counter == 1'b1) //VGA standard
-	V_Count_Value <= V_Count_Value + 1;
-      else 
-	V_Counter_Value <= 0; // Reset H counter
+
+      if (enable_v_counter == 1'b1) begin
+	 
+	 if (V_Count_Value < 524) //VGA standard
+	   V_Count_Value <= V_Count_Value + 1;
+	 else 
+	   V_Counter_Value <= 0; // Reset H counter
+      end
    end
 endmodule // vertical_counter
